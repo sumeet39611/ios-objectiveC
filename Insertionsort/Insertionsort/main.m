@@ -2,31 +2,35 @@
 //  main.m
 //  Insertionsort
 //
-//  Created by BridgeLabz on 09/07/16.
+//  Sorting data using insertion sort
+//
+//  Created by Sumeet on 09/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Insertionsort.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-     
-        int ch;
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        int choice;
         
-        //Displaying choices
+        //displaying choices
         NSLog(@"1. Insertion sort for Numbers \n 2. Insertion sort for Words");
     
         //taking user choice
         NSLog(@"Enter ur choice:");
-        scanf("%i",&ch);
+        scanf("%i",&choice);
      
         //making object of Insertionsort class
-        Insertionsort *insertion =[[Insertionsort alloc] init];
+        Insertionsort *insertionsortObj =[[Insertionsort alloc] init];
         
         // using switch case
-        switch (ch) {
+        switch (choice)
+        {
             case 1:
-                
                     //Enter no. of elements in array
                     NSLog(@"how much elements you want to entered:");
                     int a[10],n;
@@ -34,19 +38,21 @@ int main(int argc, const char * argv[]) {
                 
                     //taking user input
                     NSLog(@"enter elements");
-                    for (int i=0; i< n; i++) {
+                    for (int i=0; i< n; i++)
+                    {
                         scanf("%i",&a[i]);
                     }
                 
                     //insertion sorting in ascending order
-                    [insertion sortingNumber:a :n];
+                    [insertionsortObj sortingNumber:a :n];
                 
                     //printing result array
-                    for (int i=0; i< n; i++) {
+                    for (int i=0; i< n; i++)
+                    {
                         NSLog(@"%i",a[i]);
                     }
                 
-                break;
+                    break;
                 
             case 2:
                     NSLog(@"----INSERTION SORT----");
@@ -74,13 +80,12 @@ int main(int argc, const char * argv[]) {
                 
                 
                     //calling method
-                    [insertion sortingString:array];
+                    [insertionsortObj sortingString:array];
                 
                     // display result array after sorting
                     NSLog(@"print sorting array: %@", array);
                 
                     break;
-                
         }
     
     }

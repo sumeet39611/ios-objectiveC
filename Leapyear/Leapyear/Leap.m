@@ -2,7 +2,9 @@
 //  Leap.m
 //  Leapyear
 //
-//  Created by BridgeLabz on 07/07/16.
+//  Implementing function for finding leap year
+//
+//  Created by Sumeet on 07/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
@@ -10,20 +12,31 @@
 
 @implementation Leap
 
--(void)findLeapyear:(int)year{
-    
+//finding leap year or not
+-(void)findLeapyear:(int)year
+{
     //check for century year first
-    if (year % 400 == 0) {
+    if (year % 400 == 0)
+    {
+        //printing year as leap year
         NSLog(@"%i is leap year ",year);
-    } else if (year%100 == 0) {
-        NSLog(@"%i is not leap year",year);
+    }
+    else if (year%100 == 0)
+        {
+            //printing year as not leap year
+            NSLog(@"%i is not leap year",year);
         }
-        else if(year%4 == 0){
-            NSLog(@"%i is leap year ",year);
+    
+        else if(year%4 == 0)
+            {
+                //printing year as leap year
+                NSLog(@"%i is leap year ",year);
             }
-            else{
+            else
+            {
+                //printing year as not leap year
                 NSLog(@"%i is not leap year ",year);
-                }
-        
+            }
 }
+
 @end

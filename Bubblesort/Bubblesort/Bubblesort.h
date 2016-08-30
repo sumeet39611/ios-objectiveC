@@ -2,7 +2,9 @@
 //  Bubblesort.h
 //  Bubblesort
 //
-//  Created by BridgeLabz on 09/07/16.
+//  Creating interface
+//
+//  Created by Sumeet on 09/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 

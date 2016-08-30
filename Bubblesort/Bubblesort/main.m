@@ -2,52 +2,56 @@
 //  main.m
 //  Bubblesort
 //
-//  Created by BridgeLabz on 09/07/16.
+//  Sorting out data using bubble sort
+//
+//  Created by Sumeet on 09/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Bubblesort.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
-        int ch;
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        int choice;
         
         //Displaying choices
         NSLog(@"1. Bubble sort for Numbers \n 2. Bubble sort for Words");
         
         //taking user choice
         NSLog(@"Enter ur choice:");
-        scanf("%i",&ch);
+        scanf("%i",&choice);
         
         //making object of Bubblesort class
-        Bubblesort *bubble =[[Bubblesort alloc] init];
+        Bubblesort *bubblesortObj =[[Bubblesort alloc] init];
         
         // using switch case
-        switch (ch) {
+        switch (choice)
+        {
             case 1:
                     //no. of elements in array
                     NSLog(@"how much elements you want to entered:");
-                
-                    int a[10],n;
+                    int arr[10],n;
                     scanf("%i", &n);
                 
                     //taking input
                     NSLog(@"enter elements");
-                    for (int i=0; i< n; i++) {
-                        scanf("%i",&a[i]);
+                    for (int i=0; i< n; i++)
+                    {
+                        scanf("%i",&arr[i]);
                     }
                 
                     //bubble sorting in ascending order
-                    [bubble sortingNumber:a :n];
+                    [bubblesortObj sortingNumber:arr :n];
                 
                     //printing result array
                     NSLog(@"Printing sorted array");
-                    for (int i=0; i< n; i++) {
-                        NSLog(@"%i",a[i]);
+                    for (int i=0; i< n; i++)
+                    {
+                        NSLog(@"%i",arr[i]);
                     }
-                
-                
                     break;
                 
             case 2:
@@ -55,13 +59,11 @@ int main(int argc, const char * argv[]) {
                 
                     //file handling
                     NSFileManager *file =[NSFileManager defaultManager];
-                
-                
                     NSData *dat = [file contentsAtPath:@"/Users/bridgelabz/Desktop/sumeet/t2.txt"];
                 
                     NSString *content =[[[NSString alloc] initWithBytes:[dat bytes] length:[dat length]  encoding:NSUTF8StringEncoding] autorelease];
-                
-                
+
+                    //deciding separator in two words
                     NSString *delimiter = @" ";
                 
                     // all data is in array now
@@ -76,18 +78,12 @@ int main(int argc, const char * argv[]) {
                 
                 
                     //calling method
-                    [bubble sortingStrings:array];
+                    [bubblesortObj sortingStrings:array];
                 
                     // display result array after sorting
                     NSLog(@"printing sorted array: %@", array);
-                
                     break;
-                
         }
-        
-        
-        
-
     }
     return 0;
 }

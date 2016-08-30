@@ -2,7 +2,9 @@
 //  Power.m
 //  Power2
 //
-//  Created by BridgeLabz on 07/07/16.
+//  Implemention of function
+//
+//  Created by Sumeet on 07/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 

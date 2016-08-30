@@ -2,7 +2,9 @@
 //  Gambler.m
 //  Gambler
 //
-//  Created by BridgeLabz on 07/07/16.
+//  Implementing functions
+//
+//  Created by Sumeet on 07/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
@@ -10,31 +12,36 @@
 
 @implementation Gambler
 
-//set a stack value
--(void) setStack:(int)s{
-    stack=s;
+//set a stake value
+-(void) setStake:(int)stk
+{
+    mStake=stk;
 }
 
 //set a goal
--(void) setGoal:(int)g{
-    goals=g;
+-(void) setGoal:(int)gol
+{
+    mGoals=gol;
 }
 
 //set a no. of trails
--(void) setTrial:(int)t{
-    trials=t;
+-(void) setTrial:(int)tri
+{
+    mTrials=tri;
 }
 
-//display result
--(void) print{
+//display result of wins and loss
+-(void) print
+{
     int bets=0;
     int wins=0;
-    
-    for (int i=0; i<trials; i++) {
-        int cash=stack;
+    for (int i=0; i<mTrials; i++)
+    {
+        int cash=mStake;
         
         //loop continue till he win or broke
-        while (cash>0 && cash<goals) {
+        while (cash>0 && cash<mGoals)
+        {
             bets++;
             if ((float)arc4random_uniform(10)/10 < 0.5)
                 cash++;
@@ -42,13 +49,17 @@
                 cash--;
             
         }
-        if(cash == goals)
+        
+        //if cash equals to goal then he wins
+        if(cash == mGoals)
             wins++;
         
     }
+    //printing results
     NSLog(@"total wins: %i",wins);
-    NSLog(@"percentage of wins: %f", (double)wins*100 / trials);
-    NSLog(@"percentage of loss: %f", (double)(trials-wins)*100 / trials);
+    NSLog(@"percentage of wins: %f", (double)wins*100 / mTrials);
+    NSLog(@"percentage of loss: %f", (double)(mTrials-wins)*100 / mTrials);
     
 }
+
 @end

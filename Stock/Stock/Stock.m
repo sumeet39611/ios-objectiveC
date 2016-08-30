@@ -2,31 +2,41 @@
 //  Stock.m
 //  Stock
 //
-//  Created by BridgeLabz on 08/07/16.
+//  Implementing functions
+//
+//  Created by Sumeet on 08/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import "Stock.h"
 
 @implementation Stock
+
 //set name
--(void) setName:(NSString *)nm{
-    name = nm;
+-(void) setName:(NSString *)name
+{
+    mName = name;
 }
+
 //set share
--(void) setShare:(int)share{
-    no_of_share = share;
+-(void) setShare:(int)share
+{
+    mNOOfShare = share;
 }
+
 //set price
--(void) setPrice:(int)p{
-    price = p;
+-(void) setPrice:(int)price
+{
+    mPrice = price;
 }
 
 //display all information of member
--(void) print{
-    NSLog(@"name=%@",name);
-    NSLog(@"No. of share=%i",no_of_share);
-    NSLog(@"price of share=%i",price);
-    NSLog(@"total=%i", no_of_share*price);
+-(void) print
+{
+    NSLog(@"name=%@",mName);
+    NSLog(@"No. of share=%i",mNOOfShare);
+    NSLog(@"price of share=%i",mPrice);
+    NSLog(@"total=%i", mNOOfShare * mPrice);
 }
+
 @end

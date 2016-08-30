@@ -2,7 +2,9 @@
 //  main.m
 //  FindYourNumber
 //
-//  Created by BridgeLabz on 18/07/16.
+//  Finding number of user
+//
+//  Created by Sumeet on 18/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
@@ -10,15 +12,16 @@
 
 
 //function for finding number
-void findNumber(int lower,int higher ){
-    
+void findNumber(int lower,int higher )
+{
     // number found
-    if(lower == higher){
+    if(lower == higher)
+    {
         NSLog(@"Your Number is : %d",lower);
         return ;
     }
     
-    //Finding middle number
+    //finding middle number
     int middle=(lower+higher)/2;
     
     //displaying choices of two half
@@ -31,20 +34,22 @@ void findNumber(int lower,int higher ){
     scanf("%d",&ch);
     
     //if guess number is in first half
-    if(ch == 1){
+    if(ch == 1)
+    {
         findNumber(lower, middle);
     }
     
     //if guess number is in second half
-    else{
+    else
+    {
         findNumber(middle+1, higher);
     }
-    
-    
 }
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
         //guess number in 0-99 range
         NSLog(@"Guess Number between 0 - 99");
 

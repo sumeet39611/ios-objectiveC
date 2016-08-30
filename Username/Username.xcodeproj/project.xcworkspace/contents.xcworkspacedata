@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Username.xcodeproj">
+      location = "self:/Users/bridgelabz/Desktop/sumeet/ios/objectiveC/Username/Username.xcodeproj">
    </FileRef>
 </Workspace>

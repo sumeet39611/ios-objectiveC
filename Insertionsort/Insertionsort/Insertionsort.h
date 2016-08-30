@@ -2,7 +2,9 @@
 //  Insertionsort.h
 //  Insertionsort
 //
-//  Created by BridgeLabz on 09/07/16.
+//  Creating interface
+//
+//  Created by Sumeet on 09/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
@@ -16,6 +18,5 @@
 
 //method declaration for sorting words
 -(void) sortingString : (NSMutableArray *)array;
-
 
 @end

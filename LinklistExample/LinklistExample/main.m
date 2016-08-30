@@ -2,18 +2,22 @@
 //  main.m
 //  LinklistExample
 //
-//  Created by BridgeLabz on 15/07/16.
+//  Ordered linklist list in ascending order
+//
+//  Created by Sumeet on 15/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "LinklistExample.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        LinklistExample * linklistExampleObj = [[LinklistExample alloc] init];
         
-        LinklistExample * list = [[LinklistExample alloc] init];
-        
-     /*
+        /*
         //file handling
         NSFileManager *file =[NSFileManager defaultManager];
         
@@ -30,45 +34,37 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"elememt is : %@", items);
 
       
-      //adding elements to list
-       // NSInteger questionId = [[tokenQuestion objectForKey:@"question_id"] integerValue];
+        //adding elements to list
+        // NSInteger questionId = [[tokenQuestion objectForKey:@"question_id"] integerValue];
 
         NSInteger n =(NSInteger)items[1];
         //NSInteger d = (NSInteger) n;
         NSLog(@"%ld",n);
-      */
+        */
     
-    //inserting elements in linklist
-        [list insert:5];
-        
-        [list insert:2];
-        [list insert:25];
-        [list insert:14];
-        [list insert:8];
-        
-       
+        //inserting elements in linklist
+        [linklistExampleObj insert:5];
+        [linklistExampleObj insert:2];
+        [linklistExampleObj insert:25];
+        [linklistExampleObj insert:14];
+        [linklistExampleObj insert:8];
         
         //enter data for searching in list
         int data;
         NSLog(@"enter data which you want to search :");
         scanf("%i",&data);
         
-       //searching element in list
-       int f = [list searchElement:data];
+        //searching element in list
+        int f = [linklistExampleObj searchElement:data];
        
         if(f == 1)
-       {
-           //insert if not found
-           [list insert:data];
-           
-       }
+        {
+            //insert if not found
+            [linklistExampleObj insert:data];
+        }
         
         // printing full list
-      
-        [list print];
-      
-        
+        [linklistExampleObj print];
     }
-    
     return 0;
 }

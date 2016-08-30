@@ -2,21 +2,25 @@
 //  Gambler.h
 //  Gambler
 //
-//  Created by BridgeLabz on 07/07/16.
+//  Creating interface
+//
+//  Created by Sumeet on 07/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Gambler : NSObject{
-int stack;
-int goals;
-int trials;
+@interface Gambler : NSObject
+{
+    int mStake;
+    int mGoals;
+    int mTrials;
 }
 
--(void) setStack:(int) s;
--(void) setGoal:(int) g;
--(void) setTrial:(int) t;
+//function declarations
+-(void) setStake:(int) stk;
+-(void) setGoal:(int) gol;
+-(void) setTrial:(int) tri;
 -(void) print;
 
 @end

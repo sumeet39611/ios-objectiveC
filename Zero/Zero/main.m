@@ -2,32 +2,37 @@
 //  main.m
 //  Zero
 //
-//  Created by BridgeLabz on 08/07/16.
+//  Number of triplets that sum equal to zero
+//
+//  Created by Sumeet on 08/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Zero.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
         //making object of Zero class
-        Zero *zro = [[Zero alloc] init];
-        int a[20],n;
+        Zero *zeroObj = [[Zero alloc] init];
+        
+        int arr[20],number;
         
         //taking no. of elements you want in array
         NSLog(@"How much element u want:");
-        scanf("%i",&n);
+        scanf("%i",&number);
         
         //taking array elements from user
         NSLog(@"enter elements: ");
-        for (int i=0; i<n; i++)
+        for (int i=0; i<number; i++)
         {
-            scanf("%i",&a[i]);
+            scanf("%i",&arr[i]);
         }
         
         //calling method
-        [zro print:a:n];
+        [zeroObj print:arr :number];
     }
     return 0;
 }

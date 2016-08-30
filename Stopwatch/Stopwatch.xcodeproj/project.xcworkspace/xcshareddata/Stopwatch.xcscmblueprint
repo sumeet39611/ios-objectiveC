@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A9A1CA8ED1F861B3EFF99C1B8EC9D63BB62EA487",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A9A1CA8ED1F861B3EFF99C1B8EC9D63BB62EA487" : 0,
+    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3FF48C11-7252-4C06-881C-1EF040EC6608",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A9A1CA8ED1F861B3EFF99C1B8EC9D63BB62EA487" : "objectiveC\/",
+    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Stopwatch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Stopwatch\/Stopwatch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/habeebak501\/demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "185113AA7A5D1057F715CDE03C05A8788662CF4A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sumeet39611\/ios-objectiveC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9A1CA8ED1F861B3EFF99C1B8EC9D63BB62EA487"
+    }
+  ]
+}

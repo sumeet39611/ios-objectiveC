@@ -2,25 +2,30 @@
 //  main.m
 //  Primefactor
 //
-//  Created by BridgeLabz on 07/07/16.
+//  Prime factor of a number
+//
+//  Created by Sumeet on 07/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Primefactor.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
         //making object of Primefactor class
-        Primefactor *prime = [[Primefactor alloc] init];
+        Primefactor *primefactorObj = [[Primefactor alloc] init];
+       
+        int number;
         
         //taking input as a number
-        int number;
         NSLog(@"Enter a number: ");
         scanf("%i",&number);
         
         //calling method
-        [prime print:number];
+        [primefactorObj print:number];
     }
     return 0;
 }

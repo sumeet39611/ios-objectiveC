@@ -2,7 +2,9 @@
 //  Anagram.h
 //  Anagram
 //
-//  Created by BridgeLabz on 08/07/16.
+//  Creating interface
+//
+//  Created by Sumeet on 08/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
@@ -10,7 +12,7 @@
 
 @interface Anagram : NSObject
 
--(void) print:(char [])b
-             :(char [])c;
+//function declaration
+-(void) printchar1:(char [])string1 char2:(char [])string2;
 
 @end

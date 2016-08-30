@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A4D6EF61D2E2C080042F48A /* Username */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Username; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4D6EF61D2E2C080042F48A /* Username.temp_caseinsensitive_rename.temp_caseinsensitive_rename */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Username.temp_caseinsensitive_rename.temp_caseinsensitive_rename; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4D6EF91D2E2C080042F48A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 		0A4D6EF71D2E2C080042F48A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A4D6EF61D2E2C080042F48A /* Username */,
+				0A4D6EF61D2E2C080042F48A /* Username.temp_caseinsensitive_rename.temp_caseinsensitive_rename */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +79,7 @@
 			);
 			name = Username;
 			productName = Username;
-			productReference = 0A4D6EF61D2E2C080042F48A /* Username */;
+			productReference = 0A4D6EF61D2E2C080042F48A /* Username.temp_caseinsensitive_rename.temp_caseinsensitive_rename */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -207,14 +207,14 @@
 		0A4D6EFE1D2E2C080042F48A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Username.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
 		0A4D6EFF1D2E2C080042F48A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Username.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
@@ -237,6 +237,7 @@
 				0A4D6EFF1D2E2C080042F48A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

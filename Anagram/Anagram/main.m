@@ -2,19 +2,25 @@
 //  main.m
 //  Anagram
 //
-//  Created by BridgeLabz on 08/07/16.
+//  Strings are anagram or not 
+//
+//  Created by Sumeet on 08/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Anagram.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
         //making object of Anagram class
-        Anagram *agram=[[Anagram alloc] init];
+        Anagram *anagramObj=[[Anagram alloc] init];
+     
         char str1[20];
         char str2[20];
+        
         //taking 2 strings as input
         NSLog(@"enter 1st string:");
         scanf("%s",str1);
@@ -22,7 +28,7 @@ int main(int argc, const char * argv[]) {
         scanf("%s",str2);
         
         //calling method
-        [agram print:str1 :str2];
+        [anagramObj printchar1:str1 char2:str2 ];
         
     }
     return 0;

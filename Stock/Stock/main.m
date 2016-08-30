@@ -2,48 +2,52 @@
 //  main.m
 //  Stock
 //
-//  Created by BridgeLabz on 08/07/16.
+//  Stock report information
+//
+//  Created by Sumeet on 08/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Stock.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        char name[20];
+        int share;
+        int price;
+        int number;
         
-        char nme[20];
-        int shr;
-        int prc;
-        int n;
-        
+        //taking number of member in stock market
         NSLog(@"how many member in stock market : ");
-        scanf("%i",&n);
+        scanf("%i",&number);
         
-        for (int i=0; i<n; i++) {
-            
+        for (int i=0; i<number; i++)
+        {
             //making object of Stock class
-            Stock *stk=[[Stock alloc] init];
+            Stock *stockObj=[[Stock alloc] init];
             
             //taking members name
             NSLog(@"enter name :");
-            scanf("%s",nme);
-            NSString *fname=[NSString stringWithCString:nme encoding:1];
+            scanf("%s",name);
+            NSString *sName=[NSString stringWithCString:name encoding:1];
             
             //No. of share
             NSLog(@"enter share :");
-            scanf("%i",&shr);
+            scanf("%i",&share);
             
             //Price of share
             NSLog(@"enter price:");
-            scanf("%i",&prc);
+            scanf("%i",&price);
         
             //calling methods
-            [stk setName:fname];
-            [stk setShare:shr];
-            [stk setPrice:prc];
-            [stk print];
+            [stockObj setName:sName];
+            [stockObj setShare:share];
+            [stockObj setPrice:price];
+            [stockObj print];
         }
-        
     }
     return 0;
 }
